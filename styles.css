@@ -1,0 +1,40 @@
+
+/*TYPE SELECTOR*/
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    color: rgb(112, 100,5);
+}
+
+q {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    color: #ec0a0a;
+}
+
+img {
+    float: left;
+    margin-right: 1em;
+}
+
+/*ID SELECTOR*/
+#photography {
+    clear: left;
+}
+
+/*RELATIONAL SELECTOR*/
+main strong {
+    font-size: 120%;
+    color: rgb(7, 87, 21);
+}
+
+section#films a:hover {
+    font-size: 200%;
+    color: #e10000;
+}
+
+/*COMBINATION SELECTOR*/
+h1, h2, h3 {
+    color: rgb(8, 19, 186)
+}
