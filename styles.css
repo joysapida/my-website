@@ -4,15 +4,17 @@
 ul {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2em;
-    color: rgb(112, 100,5);
+    color: hwb(74 56% 1%);
 }
 
 q {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-variant: small-caps;
-    color: #ec0a0a;
+    color: hwb(77 38% 2%);
 }
-
+p {
+    color: hwb(100 97% 2%);
+}
 img {
     float: left;
     margin-right: 1em;
@@ -26,15 +28,57 @@ img {
 /*RELATIONAL SELECTOR*/
 main strong {
     font-size: 120%;
-    color: rgb(7, 87, 21);
+    color: hwb(0 1% 99%);
 }
 
 section#films a:hover {
     font-size: 200%;
-    color: #e10000;
+    color: hwb(0 88% 7%);
 }
 
 /*COMBINATION SELECTOR*/
 h1, h2, h3 {
-    color: rgb(8, 19, 186)
+    color: rgb(229, 28, 45);
+}
+
+
+body {
+    height: 500px;
+    background: #ebd7b2 url("images/shoot.jpg") center center;
+}
+
+#JSF {
+    background-color:#ffc0cb;
+    border: thick outset #000000;
+}
+
+#photographer {
+    background-color:#ffc0cb;
+}
+
+#videographer {
+    background-color:#ffc0cb;
+}
+
+.back {
+    width: 20%;
+    text-align: center;
+    margin: 1em;
+    padding: 2em 1em;
+    border-radius: 20%;
+}
+
+#photography {
+    float: left;
+    width: 450px;
+}
+
+
+#films {
+    float: right;
+    width: 450px;
+}
+
+footer {
+    clear: both;
 }
