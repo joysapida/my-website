@@ -82,3 +82,9 @@ body {
 footer {
     clear: both;
 }
+
+article {
+    column-count: 3;
+    column-gap: 55px;
+    column-rule: 5px solid #000000;
+}
