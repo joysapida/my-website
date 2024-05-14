@@ -4,21 +4,20 @@
 ul {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2em;
-    color: hwb(74 56% 1%);
+    color: hwb(0 2% 98%);
+    float: left;
 }
 
 q {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-variant: small-caps;
-    color: hwb(77 38% 2%);
+    color: hwb(60 2% 97%);
 }
 p {
-    color: hwb(100 97% 2%);
-}
-img {
+    color: hwb(268 5% 17%);
     float: left;
-    margin-right: 1em;
 }
+
 
 /*ID SELECTOR*/
 #photography {
@@ -26,14 +25,16 @@ img {
 }
 
 /*RELATIONAL SELECTOR*/
-main strong {
-    font-size: 120%;
+p strong {
+    font-size: 100%;
     color: hwb(0 1% 99%);
+    margin: auto;
+    padding: 0;
 }
 
 section#films a:hover {
     font-size: 200%;
-    color: hwb(0 88% 7%);
+    color: hwb(256 3% 74%);
 }
 
 /*COMBINATION SELECTOR*/
@@ -43,21 +44,9 @@ h1, h2, h3 {
 
 
 body {
+    width: 70%;
     height: 500px;
-    background: #ebd7b2 url("images/shoot.jpg") center center;
-}
-
-#JSF {
-    background-color:#ffc0cb;
-    border: thick outset #000000;
-}
-
-#photographer {
-    background-color:#ffc0cb;
-}
-
-#videographer {
-    background-color:#ffc0cb;
+    background: #150646 url("images/neutral.jpg") center center;
 }
 
 .back {
@@ -68,15 +57,25 @@ body {
     border-radius: 20%;
 }
 
+#JSF {
+    width: 100%;
+    font-size: 200%;
+    text-align: left;
+    margin: auto;
+    padding: 0;
+    float: left;
+    
+}
+
 #photography {
     float: left;
-    width: 450px;
+    width: 30%;
 }
 
 
 #films {
-    float: right;
-    width: 450px;
+    width: 30%;
+    clear: both;
 }
 
 footer {
@@ -87,4 +86,67 @@ article {
     column-count: 3;
     column-gap: 55px;
     column-rule: 5px solid #000000;
+}
+
+
+/*HOMEPAGE-SPECIFIC*/
+main#profile img {
+   float: left; 
+   width: 25%;
+   min-width: 150px;
+   padding-right: 2em;
+}
+
+br {
+    clear: both;
+}
+
+/*NAVIGATION MENU*/
+#nav_menu {
+    padding-bottom: 2em;
+    margin: 0;
+    width: 100%;
+}
+
+#nav_menu ul { 
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+ }
+
+#nav_menu ul li { 
+    float: left;
+    width: 33% 
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 98%;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgb(5, 5, 9);
+    color: white;
+    font-weight: bold;
+    border-right: 5px solid rgb(244, 239, 239);
+}
+
+ #nav_menu ul li a:hover {
+    background-color: #43739d;
+ }
+    
+#nav_menu ul li a.pic {border-right:5px solid rgb(244, 239, 239);}
+
+#nav_menu ul li a.vid {border-right:none; }
+
+@media only screen and (max-width: 630px) {
+    #nav_menu ul li { 
+        float: none;
+        width: 100% 
+    }    
+    
+#nav_menu ul li a {
+        border-right: none;
+        border-bottom: 5px solid rgb(244, 239, 239);
+    }
 }
