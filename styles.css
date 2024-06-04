@@ -84,6 +84,10 @@ br {
     padding-bottom: 2em;
     margin: auto;
     width: 100%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 #nav_menu ul {

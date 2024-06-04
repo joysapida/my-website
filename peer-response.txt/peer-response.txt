@@ -1,0 +1,6 @@
+fixing your footer as it doesn't show on the other pages.
+*****I added footer to all my pages for uniformity*****
+
+
+I could recommend for you and that would be to resize your pictures to have a similar relative size
+****I'm still working on the sizes of my images, still figuring out how I can make it look all even, it will be on my final draft*****
