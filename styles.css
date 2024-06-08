@@ -1,13 +1,28 @@
-html {
-    font-family: Arial, Arial, Helvetica, sans-serif;
+html, body {
+    width: 100vw;
 }
 
 body {
-    width: 100%;
-    height: 500px;
-    margin: auto;
-    padding: 2em;
-    background: #150646 url("images/neutral.jpg") center center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+    color: #454545;
+    background: #fff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+footer {
+    margin: 5% 1% .5% 1%;
+    border: .4em ridge;
+    padding: 1%;
+    text-align: center;
+    background-color: #e6e6e4;
 }
 
 #photography {
@@ -27,12 +42,14 @@ section#films a:hover {
     border-radius: 20%;
 }
 
-
-div#sections {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+div.sections {
+    text-align: center;
 }
+
+main#vids {
+    text-align: center;
+}
+
 
 section#photography {
     margin-right: 1em;
@@ -44,9 +61,6 @@ section#films {
     flex-basis: 40%;
 }
 
-footer {
-    clear: both;
-}
 
 article {
     column-count: 3;
@@ -54,12 +68,24 @@ article {
     column-rule: 5px solid #000000;
 }
 
-h2{
-    height: 50px;
+.scalable-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 3px solid #ddd;
+    padding: 10px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+.gallery-pics {
+    flex: auto;
+    margin: 5x;
+    width: 200px;
+}
+.gallery-container {
     display: grid;
-    grid-template:repeat(2, 80px) / repeat(3, 1fr);
-    grid-gap: 20px 20px;
-    color:#e65111;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 /*HOMEPAGE-SPECIFIC*/
@@ -70,14 +96,6 @@ main#profile img {
     padding-right: 2em;
 }
 
-img {
-    width: 35%;
-    min-width: 150px;
-}
-
-br {
-    clear: both;
-}
 
 /*NAVIGATION MENU*/
 #nav_menu {
@@ -86,7 +104,7 @@ br {
     width: 100%;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
 }
 
@@ -108,7 +126,7 @@ br {
     width: 98%;
     padding: 1em 0;
     text-decoration: none;
-    background-color: rgb(30, 129, 114);
+    background-color: rgb(75, 87, 86);
     color: white;
     font-weight: bold;
     border-right: 5px solid rgb(244, 239, 239);
@@ -135,14 +153,12 @@ br {
 .events {
     display: flex;
     flex-wrap: wrap;
-    background-color: #efa9a9;
     padding: 1em;
     margin-bottom: 1em;
     border-radius: 10px;
 }
 
 div.images {
-    background-color: #e3baba;
     width: 100%;
     padding: 1em;
     margin-bottom: 1em;
@@ -150,7 +166,6 @@ div.images {
 }
 
 div.video {
-    background-color: #e3baba;
     padding: 1em;
     margin-bottom: 1em;
     border-radius: 10px;
@@ -207,3 +222,6 @@ div.video {
         float: left;
     }
 }
+
+
+
